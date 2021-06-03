@@ -4,13 +4,12 @@ export default function manageBand(state = {
   switch (action.type) {
     case 'ADD_BAND':
       console.log('action', action)
-    let band = { 
-      
-      id: Math.random(), 
-      name: action.band.name
-      // name: action.name.name
-    }
-      return { ...state, bands: [...state.bands, band] }
+      let band = { 
+        id: Math.random(), 
+        // name: action.band.name
+        name: action.name.name
+      }
+        return { ...state, bands: [...state.bands, band] }
       
 
     case 'DELETE_BAND':

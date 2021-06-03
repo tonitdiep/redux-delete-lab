@@ -1,5 +1,6 @@
 import React from 'react'
 import Band from './Band'
+
 export const Bands = (props) => {
 
     const bands = props.bands.map(band => 
